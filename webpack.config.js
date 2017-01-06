@@ -27,7 +27,7 @@ var path = require('path');
      modulesDirectories: [
        'node_modules',
        './app/components'
-     ]
+     ],
      alias: {
        applicationStyles: 'app/styles/app.scss',
      },
