@@ -14,7 +14,7 @@ describe('AddTodo', () => {
 
   it('should call onAddToDo if valid text entered', () =>{
     var spy = expect.createSpy();
-    var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddToDo={spy}/>)
+    var addTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>)
     var $el = $(ReactDOM.findDOMNode(addTodo));
     var todoText = "party";
 
@@ -26,7 +26,7 @@ describe('AddTodo', () => {
 
     it('should not call onAddToDo if no text entered', () =>{
       var spy = expect.createSpy();
-      var aTodo = TestUtils.renderIntoDocument(<AddTodo onAddToDo={spy}/>)
+      var aTodo = TestUtils.renderIntoDocument(<AddTodo onAddTodo={spy}/>)
       var $el = $(ReactDOM.findDOMNode(aTodo));
 
       aTodo.refs.todoText.value ='';
