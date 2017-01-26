@@ -1,14 +1,15 @@
+
+
 function sumDigits(number) {
-    var abs = Math.abs(number);
-    var absArr = abs.toString().split('')
-    var sum = absArr.reduce((a,b) => {
-      return +a + +b;
-    }, 0)
-    return sum;
+      for(let i = 0; i <=number.length; i++){
+        setTimeout(function(){
+          console.log(i);
+        }, 3000)
+      }
 }
 
 
-console.log(sumDigits(-875));
+sumDigits([1,2,3,4,5]);
 
 
 
