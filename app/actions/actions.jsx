@@ -21,7 +21,7 @@ export var addTodo = (text) => {
   }
 }
 
-//toggle(id) TOGGLE_TODO
+
 
 export var toggleTodo = (id) => {
   return {
